@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="wrap_content" android:layout_height="wrap_content">
+	<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+		tools:ignore="MissingConstraints">
+		<ListView android:id="@+id/listview"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		<EditText
+			android:id="@+id/editText_priority"
+			android:layout_width="69dp"
+			android:layout_height="wrap_content"
+
+			android:layout_below="@+id/editText_title"
+			android:layout_marginStart="5dp"
+			android:layout_marginLeft="5dp"
+			android:layout_marginTop="9dp"
+			android:layout_toEndOf="@+id/Text_priority"
+			android:layout_toRightOf="@+id/Text_priority"
+			android:inputType="number"
+			android:textSize="15sp" />
+
+		<TextView
+			android:id="@+id/Text_priority"
+			android:layout_width="wrap_content"
+			android:layout_height="34dp"
+			android:layout_below="@+id/Text_title"
+			android:layout_alignBottom="@+id/Text_title"
+			android:layout_marginLeft="12dp"
+			android:layout_marginTop="20dp"
+			android:layout_marginBottom="-55dp"
+			android:text="Priority (1-3)"
+			android:textSize="20sp" />
+
+		<TextView
+			android:id="@+id/Text_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentTop="true"
+			android:layout_marginLeft="13dp"
+			android:layout_marginTop="11dp"
+			android:text="Title"
+			android:textSize="20sp" />
+
+		<EditText
+			android:id="@+id/editText_title"
+			android:layout_width="266dp"
+			android:layout_height="47dp"
+			android:layout_marginStart="74dp"
+			android:layout_marginLeft="74dp"
+			android:layout_marginTop="0dp"
+			android:layout_toEndOf="@+id/Text_title"
+			android:layout_toRightOf="@+id/Text_title"
+			android:textSize="15sp" />
+
+		<TextView
+			android:id="@+id/Text_desc"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/Text_priority"
+			android:layout_alignParentStart="true"
+			android:layout_alignParentLeft="true"
+			android:layout_marginStart="13dp"
+			android:layout_marginLeft="13dp"
+			android:layout_marginTop="87dp"
+			android:text="Description"
+			android:textSize="20sp" />
+
+		<EditText
+			android:id="@+id/editText_description"
+			android:layout_width="229dp"
+			android:layout_height="92dp"
+			android:layout_below="@+id/Text_desc"
+			android:textSize="15sp"
+			android:layout_alignParentStart="true"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentEnd="true"
+			android:layout_alignParentRight="true"
+
+			android:layout_marginStart="182dp"
+			android:layout_marginLeft="182dp"
+			android:layout_marginTop="-53dp"
+			android:layout_marginEnd="-61dp"
+			android:layout_marginRight="-61dp"
+			android:lines="8"
+			android:maxLines="10"
+			android:minLines="6" />
+
+
+		<Button
+			android:id="@+id/button_img"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignBottom="@+id/editText_description"
+			android:layout_alignParentStart="true"
+			android:layout_alignParentLeft="true"
+			android:layout_marginStart="110dp"
+			android:layout_marginLeft="110dp"
+			android:layout_marginBottom="-70dp"
+			android:text="choose image"
+			android:textSize="20sp" />
+
+		<Button
+			android:id="@+id/button_add"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignBottom="@+id/editText_description"
+			android:layout_alignParentStart="true"
+			android:layout_alignParentLeft="true"
+			android:layout_marginStart="132dp"
+			android:layout_marginLeft="132dp"
+			android:layout_marginBottom="-297dp"
+			android:text="Add note"
+			android:textSize="20sp" />
+
+		<ImageView
+			android:id="@+id/imageView"
+			android:layout_width="164dp"
+			android:layout_height="142dp"
+
+
+			android:layout_alignParentStart="true"
+			android:layout_alignParentLeft="true"
+			android:layout_marginStart="129dp"
+			android:layout_marginLeft="129dp"
+			android:layout_marginTop="265dp"
+			android:layout_marginBottom="135dp" />
+
+
+	</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content">
+
+	<RelativeLayout
+		android:id="@+id/relativeLayout"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+
+		tools:ignore="MissingConstraints">
+
+<!--		<ListView-->
+<!--			android:id="@+id/list"-->
+<!--			android:layout_height="wrap_content"-->
+<!--			android:layout_width="wrap_content">-->
+
+
+
+		<TextView
+			android:id="@+id/Name"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentTop="true"
+			android:layout_marginLeft="18dp"
+			android:layout_marginTop="9dp"
+			android:text="Title"
+
+			android:textSize="20sp" />
+
+		<EditText
+			android:id="@+id/Date"
+			android:layout_width="208dp"
+			android:layout_height="wrap_content"
+
+			android:layout_below="@+id/editText_title"
+			android:layout_marginStart="-39dp"
+			android:layout_marginLeft="-39dp"
+			android:layout_marginTop="1dp"
+			android:layout_toEndOf="@+id/Text_priority"
+			android:layout_toRightOf="@+id/Text_priority"
+			android:inputType="number"
+			android:textSize="15sp" />
+
+		<EditText
+			android:id="@+id/editText_priority"
+			android:layout_width="69dp"
+			android:layout_height="wrap_content"
+
+			android:layout_below="@+id/editText_title"
+			android:layout_marginStart="29dp"
+			android:layout_marginLeft="29dp"
+			android:layout_marginTop="44dp"
+			android:layout_toEndOf="@+id/Text_priority"
+			android:layout_toRightOf="@+id/Text_priority"
+			android:inputType="number"
+			android:textSize="15sp" />
+
+		<TextView
+			android:id="@+id/Text_priority"
+			android:layout_width="wrap_content"
+			android:layout_height="34dp"
+			android:layout_below="@+id/Name"
+			android:layout_alignBottom="@+id/Text_title"
+			android:layout_marginLeft="12dp"
+			android:layout_marginTop="53dp"
+			android:layout_marginBottom="-55dp"
+			android:text="Priority (1-3)"
+			android:textSize="20sp" />
+
+		<EditText
+			android:id="@+id/editText_title"
+			android:layout_width="266dp"
+			android:layout_height="47dp"
+			android:layout_marginStart="74dp"
+			android:layout_marginLeft="74dp"
+			android:layout_marginTop="0dp"
+			android:layout_toEndOf="@+id/Text_title"
+			android:layout_toRightOf="@+id/Text_title"
+			android:textSize="15sp" />
+
+		<TextView
+			android:id="@+id/Desc"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/Text_priority"
+			android:layout_alignParentStart="true"
+			android:layout_alignParentLeft="true"
+			android:layout_marginStart="18dp"
+			android:layout_marginLeft="18dp"
+			android:layout_marginTop="98dp"
+			android:text="Description"
+			android:textSize="20sp" />
+
+
+		<EditText
+			android:id="@+id/editText_description"
+			android:layout_width="178dp"
+			android:layout_height="88dp"
+			android:layout_below="@+id/Text_desc"
+
+			android:layout_alignBottom="@+id/button_img"
+			android:layout_alignParentEnd="true"
+			android:layout_alignParentRight="true"
+			android:layout_marginEnd="64dp"
+			android:layout_marginRight="64dp"
+			android:layout_marginBottom="71dp"
+			android:lines="8"
+			android:maxLines="10"
+			android:minLines="6"
+			android:textSize="15sp" />
+
+		<TextView
+			android:id="@+id/textView5"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/Name"
+			android:layout_alignParentLeft="true"
+			android:layout_marginLeft="15dp"
+			android:layout_marginTop="16dp"
+			android:text="Date"
+			android:textSize="20sp" />
+
+		<Button
+			android:id="@+id/button_img"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/editText_priority"
+			android:layout_marginTop="137dp"
+			android:text="Update Image" />
+
+		<Button
+			android:id="@+id/button_update"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+
+			android:layout_alignParentBottom="true"
+			android:layout_marginBottom="259dp"
+			android:text="Update Data" />
+<!--		</ListView>-->
+	</RelativeLayout>
+
+	<androidx.constraintlayout.widget.Guideline
+		android:id="@+id/guideline3"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		app:layout_constraintBottom_toTopOf="parent"
+		app:layout_constraintEnd_toStartOf="parent"
+		app:layout_constraintGuide_begin="20dp"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<androidx.constraintlayout.widget.Guideline
+		android:id="@+id/guideline4"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		app:layout_constraintBottom_toTopOf="parent"
+		app:layout_constraintEnd_toStartOf="parent"
+		app:layout_constraintGuide_begin="20dp"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<androidx.constraintlayout.widget.Barrier
+		android:id="@+id/barrier"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:barrierDirection="left"
+		app:layout_constraintBottom_toTopOf="parent"
+		app:layout_constraintEnd_toStartOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<androidx.constraintlayout.widget.Barrier
+		android:id="@+id/barrier2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:barrierDirection="top"
+		app:layout_constraintBottom_toTopOf="parent"
+		app:layout_constraintEnd_toStartOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<androidx.constraintlayout.widget.Guideline
+		android:id="@+id/guideline5"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		app:layout_constraintBottom_toTopOf="parent"
+		app:layout_constraintEnd_toStartOf="parent"
+		app:layout_constraintGuide_begin="20dp"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
